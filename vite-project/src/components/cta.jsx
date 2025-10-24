@@ -8,7 +8,7 @@ export function CTA({className, children, href}) {
 
   return (
     <div className={`flex flex-col justify-center w-full h-full
-     bg-black hover:bg-white rounded-xl transition-colors duration-300 
+     bg-primary-gray-100 hover:bg-white rounded-xl transition-colors duration-300 
      linear border-2 border-white group ${className}`}>
       
       <a href={href} className=' group-hover:text-black! transition-colors duration-300 linear grid grid-cols-6 justify-between items-center px-2 text-white!'>
