@@ -1,15 +1,12 @@
-import { useState } from 'react'
 import './cta.css'
 
 import LinkIcon from '../icons/arrow-up-right.svg?react';
 
 export function CTA({className, children, href}) {
-  const [count, setCount] = useState(0)
-
   return (
     <div className={`flex flex-col justify-center w-full h-full
      bg-primary-gray-100 hover:bg-white rounded-xl transition-colors duration-300 
-     linear border-2 border-white group ${className}`}>
+     linear border-2 border-white group cursor-pointer ${className}`}>
       
       <a href={href} className=' group-hover:text-black! transition-colors duration-300 linear grid grid-cols-6 justify-between items-center px-2 text-white!'>
         <p className='relative flex flex-col items-center col-span-5 text-center text-white font-normal group-hover:text-black
